@@ -1,0 +1,6 @@
+{
+  "name": "Computer Jungle Training Center",
+  "description": "Enterprise-grade Full-Stack Academic, Admissions, E-Commerce & Management Platform for Computer Jungle Training Center Kumba",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

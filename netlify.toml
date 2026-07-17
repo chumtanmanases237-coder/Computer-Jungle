@@ -1,0 +1,23 @@
+# netlify.toml
+# Configuration file for Netlify frontend hosting
+
+[build]
+  # The directory where build outputs are placed (Vite default is dist)
+  publish = "dist"
+  # Command to compile the React frontend
+  command = "npm run build"
+
+[[redirects]]
+  # Redirect /api/* requests to your Render backend to prevent CORS issues.
+  # REPLACE "https://your-backend-on-render.onrender.com" with your actual Render URL!
+  from = "/api/*"
+  to = "https://your-backend-on-render.onrender.com/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  # Support React Router / SPA single page app routing.
+  # This serves index.html for all non-static assets so frontend routing works properly.
+  from = "/*"
+  to = "/index.html"
+  status = 200
