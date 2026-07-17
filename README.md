@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
 <img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
@@ -18,3 +19,7 @@ View your app in AI Studio: https://ai.studio/apps/86486387-4342-46c4-b373-e5507
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+=======
+# Computer-Jungle
+A cyber cafe web app system
+>>>>>>> 2899e2524132c1e7dc9e08b608dc6414c36c92a9
