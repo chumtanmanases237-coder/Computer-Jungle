@@ -82,9 +82,9 @@ const INITIAL_COURSES: Course[] = [
     id: "course-hm12",
     departmentId: "dept-hm",
     title: "Computer Hardware Engineering & Applied Systems",
-    description: "Our core 12-month professional training. Learn PC dismantling, electronics troubleshooting, power units, hard drives, RAM replacement, operating system installations, virus cleaning, and local network wiring.",
+    description: "Our core 12-month professional training. Learn PC dismantling, electronics troubleshooting, power units, hard drives, RAM replacement, operating system installations, virus cleaning, and networking router configurations.",
     durationMonths: 12,
-    subjects: ["Intro to Computer Electronics", "Motherboard Diagnostics & CPU Architectures", "Storage & RAM Systems Optimization", "Operating System Installation & Driver Setup", "Local Area Networking (LAN) Routing & Cabling", "Diagnostic Tools & Systematic Troubleshooting"],
+    subjects: ["Intro to Computer Electronics", "Motherboard Diagnostics & CPU Architectures", "Storage & RAM Systems Optimization", "Operating System Installation & Driver Setup", "Local Area Networking (LAN)"],
     materialsRequired: ["Digital Multimeter", "Anti-static Wristband", "Precision Screwdriver Toolkit", "8GB USB Flash Drive"],
     feesCFAF: 150000,
     schedule: "Afternoon Shift (1:00 PM - 4:00 PM) & Evening Shift (5:00 PM - 8:00 PM)",
@@ -97,7 +97,7 @@ const INITIAL_COURSES: Course[] = [
     title: "Software Development & Web Technologies",
     description: "9-month intense software developer training. Master full stack HTML, CSS, JavaScript, React, Node.js, databases, git control, and cloud environments.",
     durationMonths: 9,
-    subjects: ["Algorithms & Computational Logic", "Responsive Frontend Web Design (HTML/CSS/JS)", "React UI components development", "Server-side Express and APIs", "Database Modeling & SQL Solutions", "Project Version Control with Git"],
+    subjects: ["Algorithms & Computational Logic", "Responsive Frontend Web Design (HTML/CSS/JS)", "React UI components development", "Server-side Express and APIs", "Database Modeling & SQL Solutions"],
     materialsRequired: ["Laptop with minimum 8GB RAM"],
     feesCFAF: 180000,
     schedule: "Evening Shift (5:00 PM - 8:00 PM)",
@@ -120,12 +120,12 @@ const INITIAL_COURSES: Course[] = [
 ];
 
 const INITIAL_PRODUCTS: Product[] = [
-  { id: "prod-1", category: "Laptops", name: "Lenovo ThinkPad T480 (Refurbished)", description: "Intel Core i5, 16GB RAM, 256GB SSD, 14-inch Display. Excellent for programming & business.", priceCFAF: 185000, stock: 12, imageUrl: "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=500&q=80", specifications: ["Intel Core i5-8350U", "16GB DDR4 RAM", "256GB NVMe SSD", "14 inch HD Screen", "Windows 10 Pro Installed"] },
-  { id: "prod-2", category: "Laptops", name: "HP EliteBook 840 G5", description: "Premium aluminum build, Intel Core i7, 16GB RAM, 512GB SSD. Reliable student powerhouse.", priceCFAF: 240000, stock: 8, imageUrl: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&q=80", specifications: ["Intel Core i7-8550U", "16GB RAM", "512GB High Speed SSD", "Fingerprint Scanner", "Backlit Keyboard"] },
-  { id: "prod-3", category: "Desktops", name: "Dell OptiPlex 7050 Mini Tower", description: "Complete Desktop Unit with 20-inch monitor, USB Keyboard & Mouse. Best for office desks & cyber cafes.", priceCFAF: 150000, stock: 5, imageUrl: "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=500&q=80", specifications: ["Intel Core i5 Quad Core", "8GB DDR4 RAM", "1TB SATA HDD", "DVD-RW Writer", "20 inch LED Monitor Included"] },
-  { id: "prod-4", category: "Printers", name: "HP LaserJet Pro M402dn", description: "Heavy duty monochrome laser printer. Best for cyber cafes, high speed documentation typing, and photocopy.", priceCFAF: 135000, stock: 4, imageUrl: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=500&q=80", specifications: ["Monochrome Laser Printing", "Up to 40 pages per minute", "Automatic Double-Sided Printing", "Ethernet Port Built-In"] },
-  { id: "prod-5", category: "Accessories", name: "Sandisk Cruzer Dial 32GB USB 2.0", description: "Reliable flash drive for school assignments, driver installations, and portfolio backup.", priceCFAF: 45000, stock: 120, imageUrl: "https://images.unsplash.com/photo-1618424181497-157f25b6ddd5?w=500&q=80", specifications: ["32GB Storage Capacity", "Retractable Design", "SecureAccess Software Included"] },
-  { id: "prod-6", category: "Accessories", name: "Premium HDMI Cable 3 Meters", description: "High-speed 4K UHD nylon braided HDMI cable. Perfect for connecting laptops to project screens.", priceCFAF: 4000, stock: 50, imageUrl: "https://images.unsplash.com/photo-1557063673-0493e05d49ef?w=500&q=80", specifications: ["3 Meters length", "Gold Plated Connectors", "Oxygen Free Copper core"] },
+  { id: "prod-1", category: "Laptops", name: "Lenovo ThinkPad T480 (Refurbished)", description: "Intel Core i5, 16GB RAM, 256GB SSD, 14-inch Display. Excellent for programming & business.", priceCFAF: 180000, stock: 5 },
+  { id: "prod-2", category: "Laptops", name: "HP EliteBook 840 G5", description: "Premium aluminum build, Intel Core i7, 16GB RAM, 512GB SSD. Reliable student powerhouse.", priceCFAF: 240000, stock: 3 },
+  { id: "prod-3", category: "Desktops", name: "Dell OptiPlex 7050 Mini Tower", description: "Complete Desktop Unit with 20-inch monitor, USB Keyboard & Mouse. Best for office desks & cyber cafes.", priceCFAF: 200000, stock: 2 },
+  { id: "prod-4", category: "Printers", name: "HP LaserJet Pro M402dn", description: "Heavy duty monochrome laser printer. Best for cyber cafes, high speed documentation typing, and photocopy.", priceCFAF: 120000, stock: 1 },
+  { id: "prod-5", category: "Accessories", name: "Sandisk Cruzer Dial 32GB USB 2.0", description: "Reliable flash drive for school assignments, driver installations, and portfolio backup.", priceCFAF: 8000, stock: 25 },
+  { id: "prod-6", category: "Accessories", name: "Premium HDMI Cable 3 Meters", description: "High-speed 4K UHD nylon braided HDMI cable. Perfect for connecting laptops to project screens.", priceCFAF: 5000, stock: 40 },
 ];
 
 const INITIAL_BLOGS: BlogPost[] = [
@@ -135,7 +135,7 @@ const INITIAL_BLOGS: BlogPost[] = [
     slug: "motherboard-diagnostics-guide",
     category: "Hardware",
     summary: "Learn how to diagnose a dead computer motherboard systematically using cheap tools like multimeters, RAM testers, and post code cards.",
-    content: "## Troubleshooting a Dead Motherboard\n\nMany computer repair technicians in Kumba get intimidated when a laptop or desktop motherboard refuses to power on entirely. The general reflex is to tell the customer: 'Your motherboard is bad, you need to replace it.'\n\nBefore you render this expensive verdict, you must follow systematic hardware diagnosis steps taught inside the **Computer Jungle Training Center Laboratory**:\n\n### 1. Power Supply Rail Test\nAlways test the external charger or desktop SMPS first. Check if the voltage output matches the rated voltage (typically 19V for laptops or 12V/5V for desktops). If the external brick works, inspect the DC jack socket. Loose DC jack connections are incredibly common in Cameroon due to dusty roads in Fiango and heavy socket plugging.\n\n### 2. Standby Power System (3.3V / 5V)\nUse a digital multimeter to locate the standby power controller coil inductors. If there is no 3.3V standby voltage on the power switch, the motherboard will not trigger. Trace the voltage back to the charge controller IC.\n\n### 3. CMOS Battery Clear\nA corrupted BIOS memory state can freeze a motherboard completely. Pull out the 3V CR2032 CMOS cell, wait for 30 seconds, short-circuit the BIOS terminals to clear register memory, and power on. This simple step resolves up to 25% of black screen computers!\n\nWant to learn hands-on diagnostics? Join our **Hardware Maintenance 12 Months Masterclass** at Confidence Street Junction, Fiango, Kumba.",
+    content: "## Troubleshooting a Dead Motherboard\n\nMany computer repair technicians in Kumba get intimidated when a laptop or desktop motherboard refuses to power on entirely. The general reference is to apply power, test continuity, and swap components.",
     author: "Engr. Paul Ayuk",
     imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&q=80",
     createdAt: "2026-07-10T10:00:00-07:00",
@@ -146,7 +146,7 @@ const INITIAL_BLOGS: BlogPost[] = [
     slug: "web-engineering-cameroon",
     category: "Programming",
     summary: "Cameroon is experiencing an e-commerce, banking, and mobile money boom. Web software engineers are critical to building local scalable systems.",
-    content: "## Developing Digital Solutions Locally\n\nHistorically, businesses in Cameroon had to buy expensive foreign software systems or rely on legacy offline practices. Today, with the massive adoption of MTN Mobile Money (MoMo) and Orange Money, building web-enabled software systems has never been more vital.\n\nLocal systems built by engineers inside Kumba, Buea, and Douala are tackling real-world problems:\n\n- School management systems supporting local bank integrations.\n- E-Commerce platforms allowing farmers in South West Region to sell cocoa direct.\n- Real-time computer repair diagnostics ticketing.\n\nIn our **Software Engineering 9 Months curriculum**, students build full-stack React + Express + SQLite apps and integrate local mobile money payment webhooks, prepping them to be high-earning local developers or offshore freelancers.\n\nStart your programming journey at **Computer Jungle Training Center!**",
+    content: "## Developing Digital Solutions Locally\n\nHistorically, businesses in Cameroon had to buy expensive foreign software systems or rely on legacy offline practices. Today, with the migration to cloud platforms and mobile-first design, companies need local talent.",
     author: "Mr. Manases Chumtan",
     imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&q=80",
     createdAt: "2026-07-12T14:30:00-07:00",
@@ -154,8 +154,8 @@ const INITIAL_BLOGS: BlogPost[] = [
 ];
 
 const INITIAL_CERTIFICATES: Certificate[] = [
-  { id: "CERT-CJ-2026-8801", studentName: "Achuo Divine Neba", studentId: "CJ-STUD-101", courseTitle: "Computer Hardware Engineering & Applied Systems", departmentName: "Hardware Maintenance & Networking", grade: "Excellent", issueDate: "2026-06-15", regNumber: "REG/CJ/2025/042", qrUrl: "/verify/CERT-CJ-2026-8801", verified: true },
-  { id: "CERT-CJ-2026-8802", studentName: "Etonde Mary Sango", studentId: "CJ-STUD-102", courseTitle: "Data Processing Intensive", departmentName: "Data Processing", grade: "Very Good", issueDate: "2026-05-10", regNumber: "REG/CJ/2026/011", qrUrl: "/verify/CERT-CJ-2026-8802", verified: true },
+  { id: "CERT-CJ-2026-8801", studentName: "Achuo Divine Neba", studentId: "CJ-STUD-101", courseTitle: "Computer Hardware Engineering & Applied Systems", departmentName: "Hardware Maintenance & Networking", grade: "Excellent", issueDate: "2026-07-01", regNumber: "REG/CJ/2026/101", qrUrl: "/verify/CERT-CJ-2026-8801", verified: true },
+  { id: "CERT-CJ-2026-8802", studentName: "Etonde Mary Sango", studentId: "CJ-STUD-102", courseTitle: "Data Processing Intensive", departmentName: "Data Processing", grade: "Very Good", issueDate: "2026-07-02", regNumber: "REG/CJ/2026/102", qrUrl: "/verify/CERT-CJ-2026-8802", verified: true },
 ];
 
 const INITIAL_TIMETABLE: TimetableEntry[] = [
@@ -166,8 +166,8 @@ const INITIAL_TIMETABLE: TimetableEntry[] = [
 ];
 
 const INITIAL_ASSIGNMENTS: Assignment[] = [
-  { id: "assign-1", courseId: "course-dp3", title: "Excel Budget Formulation", description: "Create an advanced, double-entry school financial template calculating automatic balances, tax percentages, and totals using absolute cell references.", dueDate: "2026-07-25", maxPoints: 20, submissionStatus: "Pending" },
-  { id: "assign-2", courseId: "course-hm12", title: "Operating System Dual Booting", description: "Demonstrate dual-boot configuration containing Windows 10 Pro and Linux Ubuntu with customized swap partition tables on a legacy BIOS mother board.", dueDate: "2026-07-28", maxPoints: 50, submissionStatus: "Pending" },
+  { id: "assign-1", courseId: "course-dp3", title: "Excel Budget Formulation", description: "Create an advanced, double-entry school financial template calculating automatic balances, tax percentages, and VAT.", submissionStatus: "Open", submittedUrl: "", pointsEarned: 0, feedback: "" },
+  { id: "assign-2", courseId: "course-hm12", title: "Operating System Dual Booting", description: "Demonstrate dual-boot configuration containing Windows 10 Pro and Linux Ubuntu with customized startup grub menu.", submissionStatus: "Open", submittedUrl: "", pointsEarned: 0, feedback: "" },
 ];
 
 const INITIAL_USERS: User[] = [
@@ -244,8 +244,8 @@ class DatabaseEngine {
       blogs: INITIAL_BLOGS,
       notifications: [],
       academicRecords: [
-        { id: "rec-1", studentId: "u-5", courseId: "course-dp3", subjectName: "Microsoft Word Essentials", score: 85, grade: "Very Good", term: "First Term", remarks: "Excellent typing alignment", dateRecorded: "2026-06-01" },
-        { id: "rec-2", studentId: "u-5", courseId: "course-dp3", subjectName: "Fundamentals of Windows OS", score: 92, grade: "Excellent", term: "First Term", remarks: "Great directory navigation speed", dateRecorded: "2026-06-05" },
+        { id: "rec-1", studentId: "u-5", courseId: "course-dp3", subjectName: "Microsoft Word Essentials", score: 85, grade: "Very Good", term: "First Term", remarks: "Excellent typing alignment" },
+        { id: "rec-2", studentId: "u-5", courseId: "course-dp3", subjectName: "Fundamentals of Windows OS", score: 92, grade: "Excellent", term: "First Term", remarks: "Great directory navigation" },
       ],
       attendanceRecords: [
         { id: "att-1", studentId: "u-5", date: "2026-07-13", status: "Present", courseId: "course-dp3" },
@@ -434,5 +434,10 @@ class DatabaseEngine {
     return null;
   }
 }
+
+// Check if DATABASE_URL is configured for PostgreSQL
+export const isPostgresEnabled = (): boolean => {
+  return !!process.env.DATABASE_URL;
+};
 
 export const dbStore = new DatabaseEngine();
